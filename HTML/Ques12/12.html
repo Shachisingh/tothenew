@@ -1,91 +1,127 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Exercise 5: Answer 12</title>
-    <style>
-      .bug_report_text{
-        background-color:#BEC4CB;
-        color:#ffffff;
-        font-family:arial;
-        width:520px;
-        height:50px;
-        padding-bottom:15px;
-        border-top-left-radius:7px;
-        border-top-right-radius:7px;
-        margin-left:100px;
-        border:1px solid grey;
-      }
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="12.css">
+</head>
+<body>
 
-    </style>
-  </head>
-  <body>
-    <div class="all">
-      <div class="bug_report_text">
-        <h2 style="margin-left:30px;">&nbsp;&nbsp;Bug Report</h2>
-      </div>
+<div class="head">
+	<div class="inside-head">
+		<div class="head-left"><h2>TO THE NEW</h2></div>
+		<div class="head-right">
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">QUICK HELP</a></li>
+			</ul>
+		</div>
+	</div>
+	<hr>
+</div>
 
-      <div class="form" style="margin-left:100px; padding:10px; width:500px; border:1px solid grey;">
+<div class="table" align="center">
+	<table class="tab">
 
-        <form class="bug_report_form" >
-          <label style="margin-left:30px;">Title*</label><br>
-          <input type="text" name="title" required style="margin-left:30px;border-radius:5px; width:400px; height:10px; padding:10px;">
-          <br><br>
+		<tr class="row1">
+			<th>BUG REPORT</th>
+		</tr>
 
-          <label style="margin-left:30px;">Description*</label><br>
-          <input type="text" name="description" required style="margin-left:30px;border-radius:5px;  width:400px; height:50px; padding:10px;">
-          <br><br>
+		<tr class="row2">
+			<td>
+				<div class="inside-row2">
+					<p>Title*</p>
+					<input type="text" name="title" style="width: 100%" required>
+				</div>
+			</td>
+		</tr>
 
-          <label style="margin-left:30px;">Operating System*</label><br>
-          <select name="os" required style="margin-left:30px;border-radius:10px;background-color:#03bb85;color:#ffffff;font-size:15px;width:425px; height:30px;">
-            <option value="Select">Select</option>
-            <option value="wxp">Windows XP</option>
-            <option value="w7">Windows 7</option>
-            <option value="w10">Windows 10</option>
-            <option value="ubu">Ubuntu</option>
-            <option value="mac">Mac OS</option>
-          </select>
-          <br><br>
+		<tr class="row3">
+			<td>
+				<div class="inside-row3">
+					<p>Description*</p>
+					<textarea rows="6" cols="59" style="width: 100%"></textarea>
+				</div>
+			</td>
+			
+		</tr>
 
-          <label style="margin-left:30px;">Product*</label><br>
-          <select name="prod" required style="margin-left:30px;border-radius:10px;background-color:#03bb85;color:#ffffff;font-size:15px;width:425px; height:30px;">
-            <option value="Select">Select</option>
-            <option value="f">Formoid</option>
-            <option value="a">Android</option>
-            <option value="web">Website</option>
-            <option value="sc">Scripting</option>
-            <option value="ios">iOS</option>
-          </select>
-          <br><br>
+		<tr class="row4">
+			<td>
+				<div class="inside-row4">
+					<p>Operating System:</p>
+					<select style="width: 100%; height: 100%">
+						<option>Windows XP</option>
+						<option>Windows 7</option>
+						<option>MacOS</option>
+					</select>
+				</div>
+			</td>
+		</tr>
 
-          <label style="margin-left:30px;">Version*</label><br>
-          <input type="text" name="version" required style="margin-left:30px;border-radius:5px;  width:400px; height:10px; padding:10px;">
-          <br><br>
+		<tr>
+			<td>
+				<div class="inside-row5">
+					<p>Product:*</p>
+					<select style="width: 100%; height: 100%;">
+						<option>Formoid</option>
+						<option>XYZ</option>
+						<option>ABC</option>
+					</select>
+				</div>
+			</td>
+		</tr>
 
-          <label style="margin-left:30px;">License*</label><br>
-          <input type="radio" name="free" value="free" style="margin-left:30px;"> Free
-          <input type="radio" name="business" value="business" style="margin-left:200px;"> Business <br><br>
+		<tr>
+			<td>
+				<div class="inside-row6">
+					<p>Version:*</p>
+					<input type="text" name="" style="width: 40%;" required>
+				</div>
+			</td>
+		</tr>
 
-          <label style="margin-left:30px;">Severity*</label><br>
-          <select name="severity" style="margin-left:30px;border-radius:10px;background-color:#03bb85;color:#ffffff;font-size:15px;width:425px; height:30px;">
-            <option value="Select">Select</option>
-            <option value="crtitcal">Critical</option>
-            <option value="high">High</option>
-            <option value="med">Medium</option>
-            <option value="low">Low</option>
-            <option value="NA">Not Important</option>
-          </select>
-          <br><br>
+		<tr>
+			<td>
+				<div class="inside-row7">
+					<p>License:*</p>
+					<input type="radio" name="" value="Free">Free
+					<input type="radio" name="" value="Business">Business
+				</div>
+			</td>
+		</tr>
 
-          <label style="margin-left:30px;">Attachments*</label><br>
-          <input type="file" name="extra" style="margin-left:30px; border-radius:5px; width:400px; ">
-          <br><br>
-        </form>
-      </div>
-      <div style="background-color:#D8DCE0; margin-left:100px; height:50px; border:1px solid grey; padding-top:15px; width:520px;border-bottom-left-radius:10px; border-bottom-right-radius:10px;">
-        <input type="submit" name="send" value="Send" style="font-size:18px; margin-left:395px; color:#ffffff; border-radius:10px;background-color:#03bb85; width:70px; height:40px;">
-      </div>
-    </div>
-  </body>
+		<tr>
+			<td>
+				<div class="inside-row8">
+					<p>Severity:</p>
+					<select style="width: 100%; height: 100%;">
+						<option>Critical</option>
+						<option>Safe</option>
+					</select>
+				</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<div class="inside-row9">
+					<p>Attachment:*</p>
+					<input type="file" name="" style="width: 100%;" required>
+				</div>
+			</td>
+		</tr>
+
+		<tr class="row10">
+			<td>
+				<div class="inside-row10">
+					<input type="submit" name="" style="float: right;">
+				</div>
+			</td>
+		</tr>
+	</table>
+</div>
+
+
+
+</body>
 </html>
-
