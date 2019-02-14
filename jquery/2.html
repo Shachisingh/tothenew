@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#test").addClass("load");
+  });
+});
+</script>
+<style>
+.load {
+  font-style: italic;
+  color: blue;
+  font-size:150%;
+}
+</style>
+</head>
+<body>
+
+<h1>QUESTION 2</h1>
+
+<p>Line 1</p>
+<p id="test">Added class "load" here.</p>
+
+<button>Add a class name using #test  id</button>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-git.js"></script>
+<script>
+$(document).ready(function(){ 
+  $('#button1').click(function(){ 
+
+            var selectedCountry = $(this).children("option:selected");
+            $("option:selected").appendTo($("div"));
+
+   });
+});
+</script>
+
+
+</head>
+<body>
+<select id="ddid">
+<option id="op1" value="red">Red</option>
+<option id="op2" value="green">Green</option>
+<option id="op3" value="blue">Blue</option>
+<option id="op4" value="white">White</option>
+</select>
+ <input id="button1" type="button" value="Click!" />
+ <div></div>
+ </body>
+ </html>
