@@ -6,7 +6,11 @@
 		if($value == 5 || $value == 4):
 			continue;
 		endif;
-		echo $value." ";
+		if($value == sizeof($numbers)):
+			echo $value;
+		else:
+		echo $value.",";
+		endif;
 	endforeach;
 ?>
  
