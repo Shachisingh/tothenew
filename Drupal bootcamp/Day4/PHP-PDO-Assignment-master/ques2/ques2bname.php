@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "Jitender@123";
+$password = "Shachi@123";
 
 $name = $_POST['first_name'];
 echo "you entered ".$name.'<br>';

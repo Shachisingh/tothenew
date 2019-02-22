@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "Jitender@123";
+$password = "Shachi@123";
 
 $phone = $_POST['phone'];
 echo "you entered ".$phone.'<br>';
