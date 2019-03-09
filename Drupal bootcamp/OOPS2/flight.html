@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <form action= "flight.php" method="POST" style="margin-top:5px;">
+         
+            <div style="margin-top:5px;">
+                <input type="text" name="fromcity" placeholder="From" autocomplete="off"  required>
+               
+                <input type="text" name="tocity" placeholder="To" autocomplete="off" required>
+            </div>
+            <div style="margin-top:5px;">
+                <input type="number" name="seats" placeholder="Number of Seats" autocomplete="off" required>
+                <select class="menu" name="flightname" required">
+                    <option value="AirIndia">AirIndia</option>
+                    <option value="Kingfisher">Kingfisher</option>
+                    <option value="SpiceAirways">SpiceAirways</option>
+                </select>
+            </div>
+            <div class="action" style="margin-top:5px;">
+                <input type="submit" name="checkFlightAvailability" value="Check Availability">
+                <input type="submit" name="bookFlights" value="Book Flight" >
+            </div>
+        </form>
+    </body>
+</html>
